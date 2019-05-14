@@ -128,8 +128,8 @@ class CharacterClassifierManager:
             if self.__mode:
                 ds = dataset.load_ttf('dataset/OpenSans-Bold.ttf', self.__lbls)
             else:
-                ds = dataset.load_mnist('dataset/train_img_mnist',
-                                        'dataset/lbl_mnist',
+                ds = dataset.load_mnist('dataset/train_img_mnist.dat',
+                                        'dataset/lbl_mnist.dat',
                                         dict((i + 1, self.__lbls[i]) for i in range(len(self.__lbls))))
 
             ds = dataset.list_to_dict(ds)
