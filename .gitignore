@@ -1,0 +1,5 @@
+database*
+test*
+output.txt
+tmp/*
+!tmp/**/empty
